@@ -9,4 +9,8 @@ describe("String#scrabble") do
   it ("returns the first numeric value for each number group") do
     expect("k".scrabble()).to(eq(5))
   end
+
+  it("return a scrabble score for an input word") do
+    expect("dog".scrabble()).to(eq(5))
+  end
 end
